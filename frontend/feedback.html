@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feedback</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="feedback.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="navbar-container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <span class="logo-symbol"><i class="fa-solid fa-circle"></i></span>
+                    <span class="logo-text">Feedback Pro</span>
+                </div>
+                <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="feedback-text fade-up" style="animation-delay: 0.1s">
+                <h2 class="page-title">User feedback</h2>
+            </div>
+            <div class="table-container fade-up" style="animation-delay: 0.3s">
+                <table id="mytable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Feedback</th>
+                            <th>Time</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+         <p id="empty-message" class="empty fade-up" style="animation-delay: 0.5s">No feedback yet.</p>
+         <footer class="footer"><p>© 2026 Feedback Pro. All rights reserved.</p></footer>
+        </div>
+        <div id="toast-container"></div>
+        <script src="feedback.js"></script>
+    </body>
+</html>
